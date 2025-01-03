@@ -41,7 +41,7 @@ function Buttons({pomodoro, shortBreak, longBreak, display}){
   // This useEffect runs once when the component mounts (when the page loads)
   useEffect(() => {
     const data = initializeLocalStorage(); // Initialize data from localStorage
-   if(storage){setPomodoroData(data)}; // Set the state with initialized data
+   setPomodoroData(data); // Set the state with initialized data
   }, []); // Empty dependency array ensures this runs only on mount
 
 useEffect(() =>{

@@ -58,7 +58,7 @@ useEffect(() =>{
     root.style.setProperty('--btn-bg', `${storage.btnLongBreak}`)
     root.style.setProperty('--secondary', `${storage.secondaryLongBreak}`)
   }
-},[display])
+},[display,root.style, storage])
 
   useEffect(() => {
     if (pomodoroData) {
